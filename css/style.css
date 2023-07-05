@@ -1,7 +1,7 @@
 /* !!!!!>>>  Main Variables to be used on site  <<<!!!!! */
 
 :root {
-    --coffee-brown: #6B4226;
+    --coffee-brown: #6b4226;
     --cream: #FFFDD0;
     --forest-green: #228B22;
     --rustic-red: #A92200;
@@ -25,6 +25,49 @@ ul, ol {
   }
 
 /* ------>>>  Basic styles for all pages  <<<------ */
+body{
+  background-image: linear-gradient(rgb(107, 66, 38, 0.2),rgb(107, 66, 38, 0.2));
+}
+
+/* Headings */
+
+
+
+/* HEADER */
+
+
+
+/* NAV */
+
+
+
+.logo {
+  width: 150px;
+}
+
+.main-nav-item{
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+.main-nav-item a {
+  color: var(--coffee-brown);
+  text-transform: uppercase;
+}
+
+.bg-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+
 
 /* !!!!END Basic styles!!!! */
 
@@ -81,5 +124,73 @@ ul, ol {
 
 /* ------>>>  MEDIA QUERIES  <<<------ */
 
+
+
 /* !!!!END MEDIA QUERIES!!!! */
+
+
+
+/* Navigation styling */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  transition: background-color 0.3s ease;
+}
+main{
+  background-color: var(--cream);
+  color: var(--coffee-brown);
+}
+.nav-container.scrolled {
+  background-color: var(--coffee-brown);
+}
+
+.nav-container.scrolled a {
+  color: #ff9900; 
+}
+
+
+/* Header styling */
+header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--cream);
+  /* text-align: center; */
+  font-size: 2em;
+}
+
+
+
 
