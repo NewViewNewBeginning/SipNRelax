@@ -1,4 +1,4 @@
-/* !!!!!>>>  Main Variables to be used on site  <<<!!!!! */
+/* !!!!!>>>  Main Color Variables to be used on site  <<<!!!!! */
 
 :root {
     --coffee-brown: #6b4226;
@@ -28,18 +28,47 @@ ul, ol {
 body{
   background-image: linear-gradient(rgb(107, 66, 38, 0.2),rgb(107, 66, 38, 0.2));
 }
+/* Main content base styles */
+main{
+  background-color: var(--cream);
+  color: var(--coffee-brown);
+}
 
 /* Headings */
+h1, h2, h3 {
+  font-family: sans-serif;
+}
 
+/* Text */
+
+p, a, span {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 
 /* HEADER */
 
+header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Main Heading style */
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--cream);
+  text-align: center;
+  font-size: 3em;
+}
+
 
 
 /* NAV */
-
-
 
 .logo {
   width: 150px;
@@ -55,16 +84,22 @@ body{
   text-transform: uppercase;
 }
 
-.bg-video {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: absolute;
-  left: 0;
-  right: 0;
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
   top: 0;
-  bottom: 0;
-  z-index: -1;
+  width: 100%;
+  z-index: 5;
+  transition: background-color 0.3s ease;
+}
+.nav-container.scrolled {
+  background-color: var(--coffee-brown);
+}
+
+.nav-container.scrolled a {
+  color: #ff9900; 
 }
 
 
@@ -74,6 +109,24 @@ body{
 
 
 /* ------>>>  HOMEPAGE STYLES <<<------ */
+
+.bg-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+
 
 /* !!!!END HOMEPAGE!!!! */
 
@@ -130,66 +183,19 @@ body{
 
 
 
-/* Navigation styling */
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 5;
-  transition: background-color 0.3s ease;
-}
-main{
-  background-color: var(--cream);
-  color: var(--coffee-brown);
-}
-.nav-container.scrolled {
-  background-color: var(--coffee-brown);
-}
-
-.nav-container.scrolled a {
-  color: #ff9900; 
-}
 
 
-/* Header styling */
-header {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
 
-.bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -2;
-}
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: -1;
-}
 
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--cream);
-  /* text-align: center; */
-  font-size: 2em;
-}
+
+
+
+
+
+
+
+
 
 
 
