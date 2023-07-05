@@ -1,0 +1,85 @@
+/* !!!!!>>>  Main Variables to be used on site  <<<!!!!! */
+
+:root {
+    --coffee-brown: #6B4226;
+    --cream: #FFFDD0;
+    --forest-green: #228B22;
+    --rustic-red: #A92200;
+    --gold: #D4AF37;
+  }
+
+/* ------>>>  Basic Reset  <<<------ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+a{
+    text-decoration: none;
+  }
+
+ul, ol {
+    list-style: none;
+  }
+
+/* ------>>>  Basic styles for all pages  <<<------ */
+
+/* !!!!END Basic styles!!!! */
+
+
+
+/* ------>>>  HOMEPAGE STYLES <<<------ */
+
+/* !!!!END HOMEPAGE!!!! */
+
+
+
+/* ------>>>  MENU STYLES <<<------ */
+
+/* !!!!END MENU!!!! */
+
+
+
+/* ------>>>  OPEN/LOCATION STYLES  <<<------ */
+
+/* !!!!END OPEN/LOCATION!!!! */
+
+
+
+/* ------>>>  COFFEE STORY STYLES  <<<------ */
+
+/* !!!!END COFFEE STORY!!!! */
+
+
+
+
+/* ------>>>  ORDER STYLES  <<<------ */
+
+/* !!!!END ORDER!!!! */
+
+
+
+/* ------>>>  JOBS STYLES  <<<------ */
+
+/* !!!!END JOBS!!!! */
+
+
+
+
+/* ------>>>  CONTACT STYLES  <<<------ */
+
+/* !!!!END CONTACT!!!! */
+
+
+
+/* ------>>>  FOOTER styles for all pages  <<<------ */
+
+/* !!!!END FOOTER styles!!!! */
+
+
+/* ------>>>  MEDIA QUERIES  <<<------ */
+
+/* !!!!END MEDIA QUERIES!!!! */
+
