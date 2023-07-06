@@ -84,8 +84,9 @@ header {
 
 /* NAV */
 
+
 .logo {
-  max-width: 150px;
+  max-width: 100px;
 }
 
 .main-nav-item{
@@ -206,6 +207,46 @@ header {
 
 /* ------>>>  FOOTER styles for all pages  <<<------ */
 
+footer {
+  background-color: var(--coffee-brown);
+  color: var(--cream);
+  display: flex;
+  flex-wrap: wrap;
+  
+  padding-top: 1rem;
+  justify-content: space-around;
+  
+}
+.social i{
+  font-size: 2rem;
+  padding-right: 1rem;
+}
+footer li, .footer-links a{
+  padding-top: .3rem;
+}
+.footer-nav{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact, .social {
+  margin-top: 1rem;
+}
+
+
+
+
+.copyright {
+  margin: 1.5rem;
+  min-width: 100%;
+  text-align: center;
+}
+footer a {
+  color: var(--cream)
+}
+
+
+
 /* !!!!END FOOTER styles!!!! */
 
 
@@ -234,7 +275,6 @@ header {
   }
   .articles{
     flex-direction: row;
-    
   }
 }
 

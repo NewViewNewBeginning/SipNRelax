@@ -13,3 +13,10 @@ window.addEventListener("scroll", function() {
     let scrollPosition = window.scrollY;
     video.style.transform = "translateY(" + scrollPosition * 0.5 + "px)";
 });
+
+
+// get the current year
+const currentYear = new Date().getFullYear();
+
+// update the footer with the current year
+document.getElementById('currentYear').textContent = currentYear;

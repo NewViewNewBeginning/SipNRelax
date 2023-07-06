@@ -11,11 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lato:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/0d6dd7f645.js" crossorigin="anonymous"></script>
     <title>Sip N' Relax Coffee - Your Cozy Corner for Fresh Coffee in Dublin</title>
 </head>
 
 <body>
+    <!--Start Header Section -->
     <header>
+        <!--Start Main Navigation -->
         <nav class="nav-container">
             <a href="index.html" class="logo-link"><img class="logo" src="./img/logo-no-bg.webp" alt="Our logo"></a>
             <ul class="main-nav">
@@ -25,12 +28,19 @@
                 <li class="main-nav-item"><a href="./html/order.html">Order Online</a></li>
             </ul>
         </nav>
+        <!--End Main Navigation -->
         <h1 class="centered">"Sip, Relax, and Revel in the Aroma at Sip N' Relax Coffee Shop!"</h1>
+        <!-- Background video with overlay -->
         <div class="overlay"></div>
         <video autoplay loop muted playsinline class="bg-video">
             <source src="./img/homepage/bg-video.mp4" type="video/mp4">
         </video>
+        <!-- End Background video with overlay -->
     </header>
+    <!--End Header Section -->
+
+
+    <!--Start Main Section as a container for anything across pages -->
     <main>
         <h2 class="sub-heading">About The Shop:</h2>
         <article class="articles">
@@ -60,8 +70,8 @@
                 <p>Meet Michal, the heartbeat of Sip N' Relax. With a passion for coffee that knows no bounds, Michal is
                     our head barista. He has honed the craft of brewing the perfect cup, blending art and science. His
                     signature drinks have both soul and character, much like himself. </p>
-                </div>
-                <img src="./img/homepage/barista.webp" alt="barista at work">
+            </div>
+            <img src="./img/homepage/barista.webp" alt="barista at work">
 
         </article>
         <article class="articles">
@@ -80,19 +90,56 @@
                     front-of-house expert, Sarah ensures that every customer feels like they're stepping into a friend's
                     living room. Her cheerfulness and knack for remembering regulars make her an indispensable part of
                     our family.</p>
-                </div>
-                <img src="./img/homepage/coffee-girl.webp" alt="Smiling girl">
+            </div>
+            <img src="./img/homepage/coffee-girl.webp" alt="Smiling girl">
         </article>
     </main>
+    <!--End Main Section as a container for anything across pages -->
+
+    <!-- Start Footer Section -->
+
     <footer>
-        <div class="social"></div>
-        <div class="details"></div>
         <div class="footer-links">
-            <a href="./html/contact.html">Contact Us</a>
-            <a href="./html/jobs.html">Jobs</a>
-            <a href="./html/open-location.html">Opening Hours | Location</a>
+            <h3>Links:</h3>
+            <div class="footer-nav">
+                <a href="./html/contact.html">Contact Us</a>
+                <a href="./html/jobs.html">Jobs</a>
+                <a href="./html/open-location.html">Opening | Location</a>
+            </div>
+            <div class="social">
+                <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
         </div>
+
+        <div class="footer-details">
+            <div class="address">
+                <h3>Address:</h3>
+                <ul>
+                    <li>Sip N' Relax Coffee Shop</li>
+                    <li>12 Java Street,</li>
+                    <li>Dublin City,</li>
+                    <li>Co. Dublin,</li>
+                    <li>Ireland</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Contact:</h3>
+                <ul>
+                    <li><a href="tel:+353211234567">+353 21 123 4567</a></li>
+                    <li><a href="mailto:hello@sipnrelaxcoffee.com">hello@sipnrelaxcoffee.com</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright">Created and Copyright © <span id="currentYear"></span> by Michal Krawczyk. All rights
+            reserved.</p>
+
     </footer>
+
+    <!-- End Footer Section -->
+
     <script src="js/app.js"></script>
 </body>
 
