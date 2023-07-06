@@ -233,9 +233,6 @@ footer li, .footer-links a{
   margin-top: 1rem;
 }
 
-
-
-
 .copyright {
   margin: 1.5rem;
   min-width: 100%;
@@ -273,8 +270,47 @@ footer a {
   p {
     font-size: clamp(1rem, 1rem + 0.2vw, 1.2rem);
   }
+/* Main content wrapper */
+  .wrapper {
+    margin: 0 auto;
+    max-width: 1400px;
+  } 
+
   .articles{
     flex-direction: row;
+    align-items: center;
+  }
+  #art-one{
+    flex-direction: row;
+  }
+  .articles:nth-child(even) {
+    flex-direction: row-reverse;
+    padding: 1rem 0;
+  }
+  
+  .articles img {
+    max-width: 60%;
+  }
+  /* Footer for bigger screens */
+  .footer-nav{
+    flex-direction: row;
+  }
+  .footer-nav a {
+    margin-right: 1rem;
+  }
+  .footer-details{
+    display: flex;
+  }
+  .address{
+    margin-right: 2rem;
+  }
+  .contact{
+    margin-top: 0;
   }
 }
 
+@media screen and (min-width: 1024px){
+  
+  
+
+}
