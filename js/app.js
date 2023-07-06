@@ -23,21 +23,28 @@ document.getElementById('currentYear').textContent = currentYear;
 
 // Hamburger menu
 
-function toggleNavMenu() {
-    var menu = document.querySelector('.main-nav');
-    var menuIcon = document.querySelector('.menu-icon');
-    var closeIcon = document.querySelector('.close-icon');
+document.addEventListener("DOMContentLoaded", function() {
+    const toggleButton = document.querySelector('.toggle-btn');
+    
+    toggleButton.addEventListener('click', toggleNavMenu);
 
-    if (menu.style.display === 'block') {
-        menu.style.display = 'none';
-        menuIcon.style.display = 'block';
-        closeIcon.style.display = 'none';
-    } else {
-        menu.style.display = 'block';
-        menuIcon.style.display = 'none';
-        closeIcon.style.display = 'block';
+    function toggleNavMenu() {
+        const menu = document.querySelector('.main-nav');
+        const menuIcon = document.querySelector('.menu-icon');
+        const closeIcon = document.querySelector('.close-icon');
+
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+            menuIcon.style.display = 'block';
+            closeIcon.style.display = 'none';
+        } else {
+            menu.style.display = 'block';
+            menuIcon.style.display = 'none';
+            closeIcon.style.display = 'block';
+        }
     }
-}
+});
+
 
   
   
