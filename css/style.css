@@ -145,8 +145,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  padding: 1rem;
+ 
 }
 .articles h2 {
   text-align: center;
@@ -154,6 +153,12 @@ header {
 
 .articles img {
   width: 100%;
+}
+.text-content {
+  padding: 1rem .5rem;
+}
+.text-content h3 {
+  padding-bottom: .8rem;
 }
 
 
