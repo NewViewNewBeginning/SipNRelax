@@ -117,6 +117,9 @@ header {
   color: #ff9900; 
 }
 
+/* Hamuburger menu */
+
+
 
 
 /* !!!!END Basic styles!!!! */
@@ -313,4 +316,38 @@ footer a {
   
   
 
+}
+
+.main-nav {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 60px; /* Adjust based on the height of your nav-container */
+  left: 0;
+  background-color: var(--coffee-brown);
+}
+
+/* Initially show the menu icon and hide the close icon */
+.menu-icon {
+  display: block;
+}
+
+.close-icon {
+  display: none;
+}
+
+/* Hide the toggle button on larger screens */
+@media screen and (min-width: 768px) {
+  .toggle-btn {
+      display: none;
+  }
+
+  .main-nav {
+      display: block;
+      position: relative;
+      top: auto;
+      background-color: transparent;
+      flex-direction: row;
+  }
 }
