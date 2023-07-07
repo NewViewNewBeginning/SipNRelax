@@ -91,7 +91,7 @@ header {
   position: absolute;
   top: 100px; 
   left: 0;
-  background-color: rgb(107, 66, 38, 0.4);
+  background-color: rgb(107, 66, 38, 0.9);
 }
 .main-nav.scrolled {
 background-color: var(--coffee-transp);
@@ -119,6 +119,14 @@ background-color: var(--coffee-transp);
   color: var(--cream);
   text-transform: uppercase;
 }
+
+.main-nav-item a:hover {
+  border-bottom: 2px solid var(--cream);
+}
+.nav-container.scrolled a:hover{
+  border-bottom: 2px solid var(--gold);
+}
+
 
 .nav-container {
   display: flex;
