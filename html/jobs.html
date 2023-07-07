@@ -1,21 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Welcome to Sip N' Relax Coffee, your neighborhood coffee shop in Dublin, offering freshly brewed coffee and delicious pastries in a cozy setting.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/0d6dd7f645.js" crossorigin="anonymous"></script>
+    <title>Sip N' Relax Coffee - Your Cozy Corner for Fresh Coffee in Dublin</title>
+</head>
+
 <body>
+    <!--Start Header Section -->
     <header>
-        <a href="../index.html"><img src="../img/logo.webp" alt="Our logo"></a>
-        <ul>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="open-location.html">Opening Hours | Location</a></li>
-            <li><a href="story.html">Coffee Story</a></li>
-            <li><a href="order.html">Order Online</a></li>
-        </ul>
+        <!--Start Main Navigation -->
+        <nav class="nav-container">
+            <a href="../index.html" class="logo-link"><img class="logo" src="./img/logo.webp" alt="Our logo"></a>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars menu-icon" ></i>
+                <i class="fa-solid fa-xmark close-icon" style="display: none;"></i>
+            </div>
+            <ul class="main-nav">
+                <li class="main-nav-item"><a class="main-nav-link" href="menu.html">Menu</a></li>
+                <li class="main-nav-item"><a class="main-nav-link" href="open-location.html">Opening Hours | Location</a></li>
+                <li class="main-nav-item"><a class="main-nav-link" href="story.html">Coffee Story</a></li>
+                <li class="main-nav-item"><a class="main-nav-link" href="order.html">Order Online</a></li>
+            </ul>
+        </nav>
+        <!--End Main Navigation -->
+        <h1 class="centered">"Sip, Relax, and Revel in the Aroma at Sip N' Relax Coffee Shop!"</h1>
+        <!-- Background video with overlay -->
+        <div class="overlay"></div>
+        <video autoplay loop muted playsinline class="bg-video">
+            <source src="./img/homepage/bg-video.mp4" type="video/mp4">
+        </video>
+        <!-- End Background video with overlay -->
     </header>
-    <main></main>
-    <footer>
-        <div class="social"></div>
-        <div class="details"></div>
-        <div class="footer-links">
-            <a href="contact.html">Contact Us</a>
-            <a href="jobs.html">Jobs</a>
-            <a href="open-location.html">Opening Hours | Location</a>
+    <!--End Header Section -->
+
+
+    <!--Start Main Section as a container for anything across pages -->
+    <main>
+        <div class="wrapper">
+            
         </div>
+    </main>
+    <!--End Main Section as a container for anything across pages -->
+
+    <!-- Start Footer Section -->
+
+    <footer>
+        <div class="footer-links">
+
+            <h3>Links:</h3>
+            <div class="footer-nav">
+                <a href="contact.html">Contact Us</a>
+                <a href="jobs.html">Jobs</a>
+                <a href="open-location.html">Opening | Location</a>
+            </div>
+            <div class="social">
+                <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+        </div>
+
+        <div class="footer-details">
+            <div class="address">
+                <h3>Address:</h3>
+                <ul>
+                    <li>Sip N' Relax Coffee Shop</li>
+                    <li>12 Java Street,</li>
+                    <li>Dublin City,</li>
+                    <li>Co. Dublin,</li>
+                    <li>Ireland</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>Contact:</h3>
+                <ul>
+                    <li><a href="tel:+353211234567">+353 21 123 4567</a></li>
+                    <li><a href="mailto:hello@sipnrelaxcoffee.com">hello@sipnrelaxcoffee.com</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="copyright">Created and Copyright © <span id="currentYear"></span> by Michal Krawczyk. All rights
+            reserved.</p>
+
     </footer>
+
+    <!-- End Footer Section -->
+
+    <script src="../js/app.js"></script>
 </body>
+
+</html>
