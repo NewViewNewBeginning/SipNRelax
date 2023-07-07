@@ -1,6 +1,7 @@
 /* !!!!!>>>  Main Color Variables to be used on site  <<<!!!!! */
 
 :root {
+    --coffee-transp: rgba(107, 66, 38, 0.95);
     --coffee-brown: #6b4226;
     --cream: #FFFDD0;
     --forest-green: #228B22;
@@ -81,9 +82,20 @@ header {
 }
 
 
-
 /* NAV */
-
+.main-nav {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 100px; 
+  left: 0;
+  background-color: rgb(107, 66, 38, 0.4);
+}
+.main-nav.scrolled {
+background-color: var(--coffee-transp);
+}
 
 .logo {
   max-width: 100px;
@@ -91,7 +103,11 @@ header {
 
 .main-nav-item{
   display: inline-block;
-  margin-left: 2rem;
+  padding: 1rem .5rem;
+}
+.main-nav-link {
+  height: 60px;
+  padding: 1rem .5rem;
 }
 
 .main-nav-item a {
@@ -110,7 +126,7 @@ header {
   transition: background-color 0.3s ease;
 }
 .nav-container.scrolled {
-  background-color: var(--coffee-brown);
+  background-color: var(--coffee-transp);
 }
 
 .nav-container.scrolled a {
@@ -119,8 +135,9 @@ header {
 
 /* Hamuburger menu */
 .menu-icon, .close-icon {
-  font-size: 3rem;
+  font-size: 2rem;
   padding-right: 1rem;
+  color: var(--gold);
 }
 .menu-icon {
   display: block;
@@ -284,11 +301,21 @@ footer a {
     font-size: clamp(1rem, 1rem + 0.2vw, 1.2rem);
   }
 
-/* Main navigation and hiding mobile menu */
-
-
+/* Main navigation and hamburger syles to hide */
+  .toggle-btn {
+  display: none;
+}
+.main-nav {
+  display: block;
+  position: relative;
+  top: auto;
+  background-color: transparent;
+  flex-direction: row;
+  justify-self: flex-end;
+}
 
 /* Main content wrapper */
+
   .wrapper {
     margin: 0 auto;
     max-width: 1400px;
@@ -333,31 +360,12 @@ footer a {
 
 }
 
-.main-nav {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    position: absolute;
-    top: 100px; /* Adjust based on the height of your nav-container */
-    left: 0;
-    background-color: var(--coffee-brown);
-}
 
-/* Initially show the menu icon and hide the close icon */
+
+
 
 
 /* Hide the toggle button on larger screens */
 @media screen and (min-width: 768px) {
-    .toggle-btn {
-        display: none;
-    }
-
-    .main-nav {
-        display: block;
-        position: relative;
-        top: auto;
-        background-color: transparent;
-        flex-direction: row;
-        justify-self: flex-end;
-    }
+    
 }
