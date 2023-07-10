@@ -67,7 +67,14 @@ header {
   position: relative;
   width: 100%;
   height: 100vh;
+  /* For each bg image */
+  background-size: cover;
 }
+
+
+
+/* Background images */
+
 
 /* Main Heading style */
 
@@ -79,6 +86,7 @@ header {
   color: var(--cream);
   text-align: center;
   min-width: 70vw;
+  z-index: 2;
 }
 
 
@@ -182,7 +190,7 @@ background-color: var(--coffee-transp);
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: -1;
+  z-index: 1;
 }
 
 .articles {
@@ -213,39 +221,55 @@ background-color: var(--coffee-transp);
 
 
 /* ------>>>  MENU STYLES <<<------ */
+.menu-header{
+    background: url('../img/menu/menu-head.webp') no-repeat center center;
+}
 
 /* !!!!END MENU!!!! */
 
 
 
 /* ------>>>  OPEN/LOCATION STYLES  <<<------ */
+.open-header{
+  background: url('../img/open/open-head.webp') no-repeat center center;
 
+}
 /* !!!!END OPEN/LOCATION!!!! */
 
 
 
 /* ------>>>  COFFEE STORY STYLES  <<<------ */
-
+.story-header {
+  background: url('../img/story/story-head.webp') no-repeat center center;
+}
 /* !!!!END COFFEE STORY!!!! */
 
 
 
 
 /* ------>>>  ORDER STYLES  <<<------ */
+.order-header{
+  background: url('../img/order/order-head.webp') no-repeat center center;
 
+}
 /* !!!!END ORDER!!!! */
 
 
 
 /* ------>>>  JOBS STYLES  <<<------ */
-
+.jobs-header{
+  background: url('../img/jobs/jobs-head.webp') no-repeat center center;
+}
 /* !!!!END JOBS!!!! */
 
 
 
 
 /* ------>>>  CONTACT STYLES  <<<------ */
+.contact-header{
+  background: url('../img/jobs/jobs-head.webp') no-repeat center center;
 
+}
 /* !!!!END CONTACT!!!! */
 
 
@@ -372,20 +396,11 @@ footer a {
   .contact{
     margin-top: 0;
   }
+
 }
 
 @media screen and (min-width: 1024px){
   
   
 
-}
-
-
-
-
-
-
-/* Hide the toggle button on larger screens */
-@media screen and (min-width: 768px) {
-    
 }
