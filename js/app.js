@@ -1,7 +1,9 @@
 window.addEventListener("scroll", function() {
     const nav = document.querySelector(".nav-container");
     const video = document.querySelector(".bg-video");
+    const headerImage = document.querySelector(".page-header");
     const menuHam = document.querySelector('.main-nav');
+    
     // Change navigation background on scroll
     if (window.scrollY > 50) {
         menuHam.classList.add("scrolled");
@@ -13,7 +15,12 @@ window.addEventListener("scroll", function() {
 
     // Parallax effect on video
     let scrollPosition = window.scrollY;
-    video.style.transform = "translateY(" + scrollPosition * 0.5 + "px)";
+    if (video) {
+        video.style.transform = "translateY(" + scrollPosition * 0.5 + "px)";
+    }
+    if (headerImage) {
+        headerImage.style.transform = "translateY(" + scrollPosition * 0.5 + "px)";
+    }
 });
 
 // get the current year

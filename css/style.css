@@ -71,6 +71,10 @@ header {
   background-size: cover;
 }
 
+footer, main{
+  position: relative;
+  z-index: 3;
+}
 
 
 /* Background images */
@@ -86,7 +90,7 @@ header {
   color: var(--cream);
   text-align: center;
   min-width: 70vw;
-  z-index: 2;
+  z-index: 1;
 }
 
 
@@ -111,7 +115,7 @@ background-color: var(--coffee-transp);
   border-radius: 50%;
 }
 .logo-link {
-  z-index: 10;
+  z-index: 5;
 }
 
 .main-nav-item{
@@ -182,7 +186,7 @@ background-color: var(--coffee-transp);
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -2;
+  z-index: -1;
 }
 
 .overlay {
@@ -190,7 +194,7 @@ background-color: var(--coffee-transp);
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1;
+  z-index: 0;
 }
 
 .articles {
@@ -399,8 +403,4 @@ footer a {
 
 }
 
-@media screen and (min-width: 1024px){
-  
-  
 
-}
