@@ -45,6 +45,23 @@ h1, h2, h3 {
   padding: 1.5rem 0;
 }
 
+.header-image {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.header-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+
 /* Text */
 
 p, a, span {
@@ -225,7 +242,15 @@ background-color: var(--coffee-transp);
 
 
 /* ------>>>  COFFEE STORY STYLES  <<<------ */
-
+.header-story{
+  background: url('../img/story/story-head.webp') no-repeat center center/cover;
+}
+@media screen and (max-width: 768px) {
+  .header-story {
+    background-size: 170%;
+  
+  }
+}
 /* !!!!END COFFEE STORY!!!! */
 
 
@@ -375,17 +400,6 @@ footer a {
 }
 
 @media screen and (min-width: 1024px){
-  
-  
 
 }
 
-
-
-
-
-
-/* Hide the toggle button on larger screens */
-@media screen and (min-width: 768px) {
-    
-}
