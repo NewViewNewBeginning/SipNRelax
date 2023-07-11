@@ -230,13 +230,17 @@ background-color: var(--coffee-transp);
 
 
 /* ------>>>  MENU STYLES <<<------ */
-
+.header-menu{
+  background: url('../img/menu/menu-head.webp') no-repeat center center/cover;
+}
 /* !!!!END MENU!!!! */
 
 
 
 /* ------>>>  OPEN/LOCATION STYLES  <<<------ */
-
+.header-open{
+  background: url('../img/open/open-head.webp') no-repeat center center/cover;
+}
 /* !!!!END OPEN/LOCATION!!!! */
 
 
@@ -245,32 +249,33 @@ background-color: var(--coffee-transp);
 .header-story{
   background: url('../img/story/story-head.webp') no-repeat center center/cover;
 }
-@media screen and (max-width: 768px) {
-  .header-story {
-    background-size: 170%;
-  
-  }
-}
+
 /* !!!!END COFFEE STORY!!!! */
 
 
 
 
 /* ------>>>  ORDER STYLES  <<<------ */
-
+.header-order{
+  background: url('../img/order/order-head.webp') no-repeat center center/cover;
+}
 /* !!!!END ORDER!!!! */
 
 
 
 /* ------>>>  JOBS STYLES  <<<------ */
-
+.header-jobs{
+  background: url('../img/jobs/jobs-head.webp') no-repeat center center/cover;
+}
 /* !!!!END JOBS!!!! */
 
 
 
 
 /* ------>>>  CONTACT STYLES  <<<------ */
-
+.header-contact{
+  background: url('../img/contact/contact-head.webp') no-repeat center center/cover;
+}
 /* !!!!END CONTACT!!!! */
 
 
@@ -396,6 +401,14 @@ footer a {
   }
   .contact{
     margin-top: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .header-image {
+    background-size: 180%;
+  
   }
 }
 
