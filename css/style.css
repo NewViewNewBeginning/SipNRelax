@@ -249,7 +249,9 @@ background-color: var(--coffee-transp);
 .header-story{
   background: url('../img/story/story-head.webp') no-repeat center center/cover;
 }
-
+.text-content h3 {
+  padding-top: 1rem;
+}
 /* !!!!END COFFEE STORY!!!! */
 
 
@@ -407,7 +409,7 @@ footer a {
 
 @media screen and (max-width: 768px) {
   .header-image {
-    background-size: 180%;
+    background-size: 200%;
   
   }
 }
