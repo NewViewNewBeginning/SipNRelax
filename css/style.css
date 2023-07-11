@@ -42,7 +42,7 @@ h1, h2, h3 {
 
 .sub-heading{
   text-align: center;
-  padding: 1.5rem 0;
+  padding-top: 1.5rem;
 }
 
 .header-image {
@@ -64,7 +64,7 @@ h1, h2, h3 {
 
 /* Text */
 
-p, a, span {
+p, a, span, li {
   font-family: 'Lato', sans-serif; 
   letter-spacing: 1px;
 }
@@ -233,6 +233,25 @@ background-color: var(--coffee-transp);
 .header-menu{
   background: url('../img/menu/menu-head.webp') no-repeat center center/cover;
 }
+.menu-wrapper{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+.menu-wrapper section{
+  margin: 0 auto;
+  text-align: center;
+}
+.pastries-section ul li p{
+  display: none;
+}
+
+.menu-section, .pastries-section,.menu-section h3, .pastries-section h3,.menu-section h2, .menu-section li, .pastries-section li{
+  padding-top: .6rem;
+}
 /* !!!!END MENU!!!! */
 
 
@@ -388,6 +407,15 @@ footer a {
   .articles img {
     max-width: 60%;
   }
+
+/* Menu page */
+.menu-wrapper{
+  display: flex;
+}
+.menu-wrapper section {
+  width: 50%;
+}
+
   /* Footer for bigger screens */
   .footer-nav{
     flex-direction: row;
@@ -415,6 +443,6 @@ footer a {
 }
 
 @media screen and (min-width: 1024px){
+  
 
 }
-
