@@ -351,7 +351,7 @@ footer a {
 /* !!!!END MEDIA QUERIES!!!! */
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
   /* Font size for tablets and larger screens */
   h1 {
     font-size: clamp(2.2rem, 2.2rem + 1vw, 4rem); 
@@ -368,18 +368,7 @@ footer a {
     font-size: clamp(1rem, 1rem + 0.2vw, 1.2rem);
   }
 
-/* Main navigation and hamburger syles to hide */
-  .toggle-btn {
-  display: none;
-}
-.main-nav {
-  display: flex;
-  /* position: relative; */
-  top: auto;
-  background-color: transparent;
-  flex-direction: row;
-  justify-content: flex-end;
-}
+
 
 /* Main content wrapper */
 
@@ -433,6 +422,20 @@ footer a {
   }
 }
 
+@media screen and (min-width: 1024px){
+/* Main navigation and hamburger syles to hide */
+.toggle-btn {
+  display: none;
+}
+.main-nav {
+  display: flex;
+  /* position: relative; */
+  top: auto;
+  background-color: transparent;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+}
 
 @media screen and (max-width: 768px) {
   .header-image {

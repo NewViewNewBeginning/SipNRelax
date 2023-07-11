@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Listen for window resize event
     window.addEventListener('resize', function() {
         // If the screen size is larger than 768px, reset menu to default state
-        if (window.innerWidth > 768) {
+        if (window.innerWidth > 1024) {
             menu.style.display = ''; // Reset to default
             menuIcon.style.display = 'none'; // Hide menu icon
             closeIcon.style.display = 'none'; // Hide close icon
