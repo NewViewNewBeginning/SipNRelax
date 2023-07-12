@@ -111,13 +111,14 @@ header {
   align-items: center;
   width: 100%;
   position: absolute;
-  top: 100px;
+  top: 83px;
+  padding-bottom: .5rem;
   left: 0;
   background-color: rgb(107, 66, 38, 0.9);
 }
 
 .logo {
-  max-width: 100px;
+  
   opacity: .6;
   border-radius: 50%;
 }
@@ -442,6 +443,11 @@ footer a {
 
   p {
     font-size: clamp(1rem, 1rem + 0.2vw, 1.2rem);
+  }
+
+  .logo{
+    height: 120px;
+    width: 120px;
   }
 
 
