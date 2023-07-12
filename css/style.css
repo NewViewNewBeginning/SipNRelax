@@ -285,7 +285,7 @@ background-color: var(--coffee-transp);
 
 /* ------>>>  JOBS STYLES  <<<------ */
 .header-jobs{
-  background: url('../img/jobs/jobs-head.webp') no-repeat center center/cover;
+  background: url('../img/jobs/jobs-mobile.webp') no-repeat center center/cover;
 }
 /* !!!!END JOBS!!!! */
 
@@ -429,17 +429,21 @@ footer a {
 }
 .main-nav {
   display: flex;
-  /* position: relative; */
   top: auto;
   background-color: transparent;
   flex-direction: row;
   justify-content: flex-end;
 }
+/* jobs page other background img  */
+.header-jobs{
+  background: url('../img/jobs/jobs-head.webp') no-repeat center center/cover;
 }
 
-@media screen and (max-width: 768px) {
-  .header-image {
-    background-size: 200%;
-  }
 }
+
+/* @media screen and (max-width: 768px) {
+  .header-image {
+    background-size:
+  }
+} */
 
