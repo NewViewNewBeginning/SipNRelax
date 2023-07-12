@@ -400,7 +400,6 @@ footer {
 
 .copyright {
   margin: 1.5rem;
-  min-width: 100%;
   text-align: center;
 }
 footer a {
@@ -414,7 +413,16 @@ footer a {
 
 
 /* !!!!END MEDIA QUERIES!!!! */
-
+@media screen and (max-width: 368px){
+  /* footer for extra small phones */
+  footer {
+    justify-content: flex-start;
+    padding-left: 1rem;
+  }
+  .footer-links{
+    margin-bottom: 1rem;
+  }
+}
 
 @media screen and (min-width: 768px) {
   /* Font size for tablets and larger screens */
