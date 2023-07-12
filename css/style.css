@@ -111,12 +111,9 @@ header {
   align-items: center;
   width: 100%;
   position: absolute;
-  top: 100px; 
+  top: 100px;
   left: 0;
   background-color: rgb(107, 66, 38, 0.9);
-}
-.main-nav.scrolled {
-background-color: var(--coffee-transp);
 }
 
 .logo {
@@ -158,10 +155,15 @@ background-color: var(--coffee-transp);
   width: 100%;
   z-index: 5;
   padding: 0 1rem;
-  transition: background-color 0.3s ease;
+ 
 }
 .nav-container.scrolled {
   background-color: var(--coffee-transp);
+  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
 }
 
 .nav-container.scrolled a {
@@ -401,6 +403,7 @@ footer {
 .copyright {
   margin: 1.5rem;
   text-align: center;
+  width: 100%;
 }
 footer a {
   color: var(--cream)
