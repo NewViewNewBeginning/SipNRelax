@@ -41,14 +41,17 @@ h1, h2, h3 {
 
 .sub-heading{
   text-align: center;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
 }
 
-/* Text */
+/* Text and Headings*/
 
-p, a, span, li {
+p, a, span, li, input::placeholder, label {
   font-family: 'Lato', sans-serif; 
   letter-spacing: 1px;
+}
+.small-text{
+  font-size: .8rem;
 }
 h1 {
   font-size: 2.2rem;
@@ -208,7 +211,7 @@ background-color: var(--coffee-transp);
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem 0;
+  padding-bottom: 1rem;
  
 }
 .articles h2 {
@@ -219,7 +222,7 @@ background-color: var(--coffee-transp);
   width: 100%;
 }
 .text-content {
-  padding: 1rem .5rem;
+  padding: 0 .5rem .5rem .5rem;
 }
 .text-content h3 {
   padding-bottom: .8rem;
@@ -296,6 +299,25 @@ background-color: var(--coffee-transp);
 .header-contact{
   background: url('../img/contact/contact-head.webp') no-repeat center center/cover;
 }
+/* Contact Form  */
+.contact-form {
+  margin: 1rem auto;
+  width: 90%;
+  max-width: 700px;
+}
+.input-group{
+  margin-bottom: 1rem;
+}
+input, textarea{
+  width: 100%;
+  padding: .8rem;
+  outline: 0;
+  border: 1px solid var(--rustic-red);
+  color: var(--coffee-brown);
+  background: transparent;
+  font-size: 1rem;
+}
+
 /* !!!!END CONTACT!!!! */
 
 
@@ -351,7 +373,7 @@ footer a {
 /* !!!!END MEDIA QUERIES!!!! */
 
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 768px) {
   /* Font size for tablets and larger screens */
   h1 {
     font-size: clamp(2.2rem, 2.2rem + 1vw, 4rem); 
@@ -427,6 +449,7 @@ footer a {
 .toggle-btn {
   display: none;
 }
+
 .main-nav {
   display: flex;
   top: auto;
@@ -434,16 +457,15 @@ footer a {
   flex-direction: row;
   justify-content: flex-end;
 }
+
+.sub-heading{
+  text-align: center;
+  padding: 1.5rem;
+}
+
 /* jobs page other background img  */
 .header-jobs{
   background: url('../img/jobs/jobs-head.webp') no-repeat center center/cover;
 }
-
 }
-
-/* @media screen and (max-width: 768px) {
-  .header-image {
-    background-size:
-  }
-} */
 
