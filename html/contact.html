@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Coffee shop Dublin, Specialty coffee Dublin, Dublin coffee shop, Freshly brewed coffee Dublin, Dublin latte art, Handcrafted beverages Dublin, Artisan pastries Dublin, Cozy café Dublin, Coffee near me Dublin, Espresso drinks Dublin, Dublin coffee beans, Sustainable coffee Dublin, Gourmet pastries Dublin, Friendly baristas Dublin, Coffee roastery Dublin, Tea and coffee Dublin, Relaxing ambiance Dublin, Coffee shop menu Dublin, Local coffee shop Dublin, Coffee events Dublin, Sip N' Relax Coffee Dublin, Coffee and desserts Dublin, Coffee lovers Dublin, Fresh coffee Dublin, Morning coffee Dublin, Coffee break Dublin, Iced coffee Dublin, Coffee specials Dublin, Takeaway coffee Dublin, Order coffee online Dublin">
+    <meta name="keywords"
+        content="Coffee shop Dublin, Specialty coffee Dublin, Dublin coffee shop, Freshly brewed coffee Dublin, Dublin latte art, Handcrafted beverages Dublin, Artisan pastries Dublin, Cozy café Dublin, Coffee near me Dublin, Espresso drinks Dublin, Dublin coffee beans, Sustainable coffee Dublin, Gourmet pastries Dublin, Friendly baristas Dublin, Coffee roastery Dublin, Tea and coffee Dublin, Relaxing ambiance Dublin, Coffee shop menu Dublin, Local coffee shop Dublin, Coffee events Dublin, Sip N' Relax Coffee Dublin, Coffee and desserts Dublin, Coffee lovers Dublin, Fresh coffee Dublin, Morning coffee Dublin, Coffee break Dublin, Iced coffee Dublin, Coffee specials Dublin, Takeaway coffee Dublin, Order coffee online Dublin">
 
     <meta name="description"
         content="Have a question or feedback? Reach out to Sip N' Relax Coffee! We're here to ensure you have the best coffee experience. Get in touch with us today.">
@@ -19,17 +20,18 @@
 
 <body>
     <!--Start Header Section -->
-  <header class="header-image header-contact">
+    <header class="header-image header-contact">
         <!--Start Main Navigation -->
         <nav class="nav-container">
             <a href="../index.html" class="logo-link"><img class="logo" src="../img/logo.webp" alt="Our logo"></a>
             <div class="toggle-btn">
-                <i class="fa-solid fa-bars menu-icon" ></i>
+                <i class="fa-solid fa-bars menu-icon"></i>
                 <i class="fa-solid fa-xmark close-icon" style="display: none;"></i>
             </div>
             <ul class="main-nav">
                 <li class="main-nav-item"><a class="main-nav-link" href="menu.html">Menu</a></li>
-                <li class="main-nav-item"><a class="main-nav-link" href="open-location.html">Opening Hours | Location</a></li>
+                <li class="main-nav-item"><a class="main-nav-link" href="open-location.html">Opening Hours |
+                        Location</a></li>
                 <li class="main-nav-item"><a class="main-nav-link" href="story.html">Coffee Story</a></li>
                 <li class="main-nav-item"><a class="main-nav-link" href="order.html">Order Online</a></li>
             </ul>
@@ -47,44 +49,46 @@
     <main>
         <div class="wrapper">
             <section class="contact-section">
-                <h2>Get in Touch</h2>
-                <p>We'd love to hear from you! Whether you have a question, feedback, or just want to say hello, your thoughts are important to us. Reach out through any of the contact methods below, and our friendly team will be happy to assist you.</p>
-                
-                <h3>Contact Form</h3>
-                <p>Have a specific question or comment? Fill out the form below, and we'll get back to you as soon as possible.</p>
-                
-                <form class="contact-form" action="#" method="POST">
+                <div class="contact-text">
+                    <h2>Get in Touch</h2>
+                <p>We'd love to hear from you! Whether you have a question, feedback, or just want to say hello, your
+                    thoughts are important to us. Reach out through any of the contact methods below, and our friendly
+                    team will be happy to assist you.</p>
+
+                    <p>Have a specific question or comment? Fill out the form below, and we'll get back to you as soon as
+                        possible.</p>
+                </div>     
+                    <form class="contact-form" action="#" method="POST">
+                    <h2>Contact Form</h2>
                     <div class="input-group">
-                      <label for="first-name">First Name:</label>
-                      <input type="text" id="first-name" name="first-name" required>
+                        <input type="text" id="first-name" name="first-name" required>
+                        <label for="first-name"><i class="fa-solid fa-user"></i> First Name:</label>
                     </div>
                     <div class="input-group">
-                      <label for="last-name">Last Name:</label>
-                      <input type="text" id="last-name" name="last-name" required>
+                        <input type="text" id="last-name" name="last-name" required>
+                        <label for="last-name"><i class="fa-solid fa-user"></i> Last Name:</label>
                     </div>
                     <div class="input-group">
-                      <label for="email">Email Address:</label>
-                      <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" required>
+                        <label for="email"><i class="fa-solid fa-envelope"></i> Email Address:</label>
                     </div>
                     <div class="input-group">
-                      <label for="phone">Phone Number:</label>
-                      <input type="tel" id="phone" name="phone">
+                        <input type="tel" id="phone" name="phone" required>
+                        <label for="phone"><i class="fa-solid fa-phone"></i> Phone Number:</label>
                     </div>
                     <div class="input-group">
-                      <label for="subject">Subject:</label>
-                      <input type="text" id="subject" name="subject" required>
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject"><i class="fa-solid fa-question"></i> Subject:</label>
                     </div>
                     <div class="input-group">
-                      <label for="message">Message:</label>
-                      <textarea id="message" name="message" required></textarea>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                        <label for="message"><i class="fa-solid fa-message"></i> Message:</label>
                     </div>
-                    <button type="submit">Submit</button>
-                  </form>
-                  
-    
-                
-                <p>Thank you for connecting with Sip N' Relax Coffee Shop. We look forward to serving you!</p>
-              </section>
+                    <button class="form-btn" type="submit"><i class="fa-solid fa-paper-plane"></i> Submit</button>
+                </form>
+
+                <!-- <p>Thank you for connecting with Sip N' Relax Coffee Shop. We look forward to serving you!</p> -->
+            </section>
         </div>
     </main>
     <!--End Main Section as a container for anything across pages -->
