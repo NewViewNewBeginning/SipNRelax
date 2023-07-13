@@ -3,7 +3,7 @@
 :root {
 	--coffee-transp: rgba(107, 66, 38, 0.95);
 	--coffee-brown: #6b4226;
-	--cream: #fffdd0;
+	--cream: #FFFEEB;
 	--forest-green: #228b22;
 	--rustic-red: #a92200;
 	--gold: #d4af37;
@@ -449,7 +449,7 @@ footer a {
 		font-size: clamp(1.1rem, 1.1rem + 0.3vw, 1.8rem);
 	}
 
-	p {
+	p, a {
 		font-size: clamp(1rem, 1rem + 0.2vw, 1.2rem);
 	}
 
