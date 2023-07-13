@@ -238,8 +238,7 @@ header {
 	background: url("../img/menu/menu-head.webp") no-repeat center center/cover;
 }
 .menu-wrapper {
-	
-	padding-bottom: 2rem;
+	padding: 1rem .5rem;
 }
 .menu-wrapper section {
   margin-top: 1rem;
