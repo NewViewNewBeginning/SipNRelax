@@ -289,8 +289,8 @@ header {
 	grid-template-columns: 1fr;
 }
 .job-section {
-  max-width: 480px;
-  justify-self: center;
+	max-width: 480px;
+	justify-self: center;
 }
 .job-section h3 {
 	padding-top: 1rem;
@@ -413,7 +413,6 @@ footer a {
 
 /* ------>>>  MEDIA QUERIES  <<<------ */
 
-/* !!!!END MEDIA QUERIES!!!! */
 @media screen and (max-width: 368px) {
 	/* footer for extra small phones */
 	footer {
@@ -489,7 +488,6 @@ footer a {
 	.jobs-wrapper {
 		grid-template-columns: repeat(2, 1fr);
 	}
-  
 
 	/* Footer for bigger screens */
 	.footer-nav {
@@ -540,3 +538,4 @@ footer a {
 		grid-template-columns: repeat(3, 1fr);
 	}
 }
+/* !!!!END MEDIA QUERIES!!!! */
