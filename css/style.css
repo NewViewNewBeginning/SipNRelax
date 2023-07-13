@@ -445,10 +445,7 @@ footer a {
     font-size: clamp(1rem, 1rem + 0.2vw, 1.2rem);
   }
 
-  .logo{
-    height: 120px;
-    width: 120px;
-  }
+
 
 
 
@@ -527,6 +524,10 @@ footer a {
   background-color: transparent;
   flex-direction: row;
   justify-content: flex-end;
+}
+.logo{
+  height: 120px;
+  width: 120px;
 }
 
 .sub-heading{
