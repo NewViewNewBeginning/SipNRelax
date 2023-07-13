@@ -238,12 +238,14 @@ header {
 	background: url("../img/menu/menu-head.webp") no-repeat center center/cover;
 }
 .menu-wrapper {
-	margin: 0 auto;
+	
 	padding-bottom: 2rem;
 }
 .menu-wrapper section {
+  margin-top: 1rem;
 	margin: 0 auto;
 	text-align: center;
+  max-width: 90%;
 }
 
 .menu-section,
@@ -281,6 +283,8 @@ header {
 /* !!!!END ORDER!!!! */
 
 /* ------>>>  JOBS STYLES  <<<------ */
+
+
 .header-jobs {
 	background: url("../img/jobs/jobs-mobile.webp") no-repeat center center/cover;
 }
@@ -288,10 +292,19 @@ header {
 	display: grid;
 	grid-template-columns: 1fr;
 }
-.job-section {
+.job-section{
 	max-width: 480px;
 	justify-self: center;
+	
 }
+
+.job-section, .menu-section, .pastries-section{
+  box-shadow: 6px 5px 19px 1px rgba(107,66,38,0.33);
+  -webkit-box-shadow: 6px 5px 19px 1px rgba(107,66,38,0.33);
+  -moz-box-shadow: 6px 5px 19px 1px rgba(107,66,38,0.33);
+  margin: .5rem;
+}
+
 .job-section h3 {
 	padding-top: 1rem;
 }
