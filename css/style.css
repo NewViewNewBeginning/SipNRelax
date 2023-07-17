@@ -56,6 +56,7 @@ input::placeholder,
 label {
 	font-family: "Lato", sans-serif;
 	letter-spacing: 1px;
+  line-height: 1.5;
 }
 .small-text {
 	font-size: 0.8rem;
@@ -75,7 +76,8 @@ li {
 	padding-bottom: 0.6rem;
 }
 section {
-	padding: 1rem;
+	padding: 1.5rem;
+  margin: 3rem 1rem;
 }
 
 /* HEADER */
@@ -241,10 +243,8 @@ header {
 	padding: 1rem .5rem;
 }
 .menu-wrapper section {
-  margin-top: 1rem;
-	margin: 0 auto;
 	text-align: center;
-  max-width: 90%;
+  
 }
 
 .menu-section,
@@ -301,7 +301,7 @@ header {
   box-shadow: 6px 5px 19px 1px rgba(107,66,38,0.33);
   -webkit-box-shadow: 6px 5px 19px 1px rgba(107,66,38,0.33);
   -moz-box-shadow: 6px 5px 19px 1px rgba(107,66,38,0.33);
-  margin: .5rem;
+  /* margin: .5rem; */
 }
 
 .job-section h3 {
