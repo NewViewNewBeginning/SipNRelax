@@ -139,16 +139,14 @@ header {
 	padding: 1rem 0.5rem;
 }
 .main-nav-link {
-	height: 60px;
-	padding: 1rem 0.5rem;
+  height: 60px;
+  padding: 1rem 0.5rem;
+  color: var(--cream);
+  text-transform: uppercase;
+  transition: border 3s ease;
 }
 
-.main-nav-item a {
-	color: var(--cream);
-	text-transform: uppercase;
-}
-
-.main-nav-item a:hover {
+.main-nav-link:hover {
 	border-bottom: 2px solid var(--cream);
 }
 .nav-container.scrolled a:hover {
