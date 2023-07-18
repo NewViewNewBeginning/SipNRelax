@@ -273,11 +273,25 @@ header {
 }
 /* !!!!END COFFEE STORY!!!! */
 
+
 /* ------>>>  ORDER STYLES  <<<------ */
 .header-order {
 	background: url("../img/order/order-head.webp") no-repeat center center/cover;
 }
+.order-wrapper{
+  padding: 2rem 1rem;
+}
+.order-wrapper div{
+  margin-bottom: 1.5rem;
+}
+.order-wrapper h2 {
+  text-align: center;
+}
+.order-btn {
+  margin: 2rem 0 1rem 0;
+}
 /* !!!!END ORDER!!!! */
+
 
 /* ------>>>  JOBS STYLES  <<<------ */
 
@@ -292,14 +306,12 @@ header {
 .job-section{
 	max-width: 480px;
 	justify-self: center;
-	
 }
 
 .job-section, .menu-section, .pastries-section{
   box-shadow: 6px 5px 19px 1px rgba(107,66,38,0.33);
   -webkit-box-shadow: 6px 5px 19px 1px rgba(107,66,38,0.33);
   -moz-box-shadow: 6px 5px 19px 1px rgba(107,66,38,0.33);
-  /* margin: .5rem; */
 }
 
 .job-section h3 {
@@ -346,7 +358,7 @@ textarea {
 	background: transparent;
 	font-size: 1rem;
 }
-.form-btn {
+.form-btn, .order-btn {
 	padding: 0.8rem;
 	color: var(--rustic-red);
 	background: transparent;
@@ -363,7 +375,8 @@ textarea {
 	-o-transition: 0.4s;
 }
 .form-btn:hover,
-.form-btn:focus {
+.form-btn:focus, .order-btn:hover,
+.order:focus {
 	background-color: var(--rustic-red);
 	color: var(--cream);
 }
@@ -494,6 +507,17 @@ footer a {
 	.contact-form {
 		margin: 0;
 	}
+  /* Order page */
+  .order-wrapper{
+    max-width: 80%;
+  }
+  .btn-cont{
+    display: flex;
+    justify-content: center;
+  }
+  .order-btn{
+    max-width: 70vw;
+  }
 	/* Jobs page */
 	.jobs-wrapper {
 		grid-template-columns: repeat(2, 1fr);
@@ -543,6 +567,14 @@ footer a {
 		text-align: center;
 		padding: 1.5rem;
 	}
+
+  /* order page */
+  .order-wrapper{
+    max-width: 60%;
+  }
+  .order-btn{
+    max-width: 40vw;
+  }
 
 	/* jobs page other background img  */
 	.header-jobs {
