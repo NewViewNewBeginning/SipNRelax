@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = $_POST['message'];
 
     // email structure
-    $to = "krawczykmichal1@gmail.com";
+    $to = "....@gmail.com";
     $headers = "From: $email\r\n";
     $email_subject = "New form submission: $subject";
     $email_body = "You have received a new message from $firstName $lastName.\n".
