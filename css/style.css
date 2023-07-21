@@ -34,21 +34,17 @@ main {
 	background-color: var(--cream);
 	color: var(--coffee-brown);
 }
+section {
+	padding: 1.5rem;
+	margin: 2rem 1rem;
+}
 
-/* Headings */
+/* Text and Headings */
 h1,
 h2,
 h3 {
 	font-family: "Courgette", cursive;
 }
-
-.sub-heading {
-	text-align: center;
-	padding-top: 1rem;
-}
-
-/* Text and Headings*/
-
 p,
 a,
 span,
@@ -73,13 +69,7 @@ h3 {
 	font-size: 1.1rem;
 	padding-bottom: 0.5rem;
 }
-li {
-	padding-bottom: 0.6rem;
-}
-section {
-	padding: 1.5rem;
-	margin: 2rem 1rem;
-}
+
 
 /* HEADER */
 
@@ -578,9 +568,7 @@ footer a {
 	}
 
 	/* Footer for bigger screens */
-	.footer-nav {
-		flex-direction: row;
-	}
+
 	.footer-nav a {
 		margin-right: 1rem;
 	}
@@ -648,6 +636,9 @@ footer a {
 	}
 	.job-section:last-child {
 		grid-column: 3;
+	}
+	.footer-nav {
+		flex-direction: row;
 	}
 }
 /* !!!!END MEDIA QUERIES!!!! */

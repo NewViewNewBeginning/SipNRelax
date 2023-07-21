@@ -72,26 +72,32 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Get the button and modal elements
-    const orderButton = document.querySelector('.order-btn');
+const orderButton = document.querySelector('.order-btn');
+
+// Check if the button exists
+if (orderButton) {
     const modal = document.querySelector('.modal');
     const closeButton = document.querySelector('.close-button');
- 
+
     // Function to open the modal
     function openModal() {
-      modal.style.display = 'block';
+        if(modal) {
+            modal.style.display = 'block';
+        }
     }
-  
+
     // Function to close the modal
     function closeModal() {
-      modal.style.display = 'none';
+        if(modal) {
+            modal.style.display = 'none';
+        }
     }
-  
+
     // Add event listener to the button
     orderButton.addEventListener('click', openModal);
-  
+
     // Add event listener to the close button
-    closeButton.addEventListener('click', closeModal);
-  });
-  
+    if (closeButton) {
+        closeButton.addEventListener('click', closeModal);
+    }
+}
