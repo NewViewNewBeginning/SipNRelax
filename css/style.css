@@ -3,7 +3,7 @@
 :root {
 	--coffee-transp: rgba(107, 66, 38, 0.95);
 	--coffee-brown: #6b4226;
-	--cream: #FFFEEB;
+	--cream: #fffeeb;
 	--forest-green: #228b22;
 	--rustic-red: #a92200;
 	--gold: #d4af37;
@@ -29,7 +29,8 @@ ol {
 /* ------>>>  Basic styles for all pages  <<<------ */
 
 /* Main content base styles */
-body, main {
+body,
+main {
 	background-color: var(--cream);
 	color: var(--coffee-brown);
 }
@@ -56,7 +57,7 @@ input::placeholder,
 label {
 	font-family: "Lato", sans-serif;
 	letter-spacing: 1px;
-  line-height: 1.5;
+	line-height: 1.5;
 }
 .small-text {
 	font-size: 0.8rem;
@@ -66,7 +67,7 @@ h1 {
 }
 h2 {
 	font-size: 1.5rem;
-	padding:  1rem 0;
+	padding: 1rem 0;
 }
 h3 {
 	font-size: 1.1rem;
@@ -77,7 +78,7 @@ li {
 }
 section {
 	padding: 1.5rem;
-  margin: 2rem 1rem;
+	margin: 2rem 1rem;
 }
 
 /* HEADER */
@@ -139,11 +140,11 @@ header {
 	padding: 1rem 0.5rem;
 }
 .main-nav-link {
-  height: 60px;
-  padding: 1rem 0.5rem;
-  color: var(--cream);
-  text-transform: uppercase;
-  transition: border 3s ease;
+	height: 60px;
+	padding: 1rem 0.5rem;
+	color: var(--cream);
+	text-transform: uppercase;
+	transition: border 3s ease;
 }
 
 .main-nav-link:hover {
@@ -221,7 +222,6 @@ article h2 {
 	padding: 1.5rem 0;
 }
 
-
 /* !!!!END HOMEPAGE!!!! */
 
 /* ------>>>  MENU STYLES <<<------ */
@@ -229,11 +229,10 @@ article h2 {
 	background: url("../img/menu/menu-head.webp") no-repeat center center/cover;
 }
 .menu-wrapper {
-	padding: 1rem .5rem;
+	padding: 1rem 0.5rem;
 }
 .menu-wrapper section {
 	text-align: center;
-  
 }
 
 .menu-section,
@@ -264,61 +263,57 @@ article h2 {
 }
 /* !!!!END COFFEE STORY!!!! */
 
-
 /* ------>>>  ORDER STYLES  <<<------ */
 .header-order {
 	background: url("../img/order/order-head.webp") no-repeat center center/cover;
 }
-.order-wrapper{
-  padding: 2rem 1rem;
+.order-wrapper {
+	padding: 2rem 1rem;
 }
-.order-wrapper div{
-  margin-bottom: 1.5rem;
+.order-wrapper div {
+	margin-bottom: 1.5rem;
 }
 .order-wrapper h2 {
-  text-align: center;
+	text-align: center;
 }
 .order-btn {
-  margin: 2rem 0 1rem 0;
+	margin: 2rem 0 1rem 0;
 }
 
 /* Modal for order */
 
 /* Modal styles */
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 99;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
- 
+	display: none;
+	position: fixed;
+	z-index: 99;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modal-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: var(--cream);
-  padding: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: var(--cream);
+	padding: 20px;
 }
 
 .close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  font-size: 2rem;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	font-size: 2rem;
 }
 
 /* !!!!END ORDER!!!! */
 
-
 /* ------>>>  JOBS STYLES  <<<------ */
-
 
 .header-jobs {
 	background: url("../img/jobs/jobs-mobile.webp") no-repeat center center/cover;
@@ -327,15 +322,17 @@ article h2 {
 	display: grid;
 	grid-template-columns: 1fr;
 }
-.job-section{
+.job-section {
 	max-width: 480px;
 	justify-self: center;
 }
 
-.job-section, .menu-section, .pastries-section{
-  box-shadow: 6px 5px 19px 1px rgba(107,66,38,0.33);
-  -webkit-box-shadow: 6px 5px 19px 1px rgba(107,66,38,0.33);
-  -moz-box-shadow: 6px 5px 19px 1px rgba(107,66,38,0.33);
+.job-section,
+.menu-section,
+.pastries-section {
+	box-shadow: 6px 5px 19px 1px rgba(107, 66, 38, 0.33);
+	-webkit-box-shadow: 6px 5px 19px 1px rgba(107, 66, 38, 0.33);
+	-moz-box-shadow: 6px 5px 19px 1px rgba(107, 66, 38, 0.33);
 }
 
 .job-section h3 {
@@ -350,7 +347,7 @@ article h2 {
 		center/cover;
 }
 /* Contact Form  */
-.contact-text{
+.contact-text {
 	margin-bottom: 2rem;
 }
 .input-group {
@@ -380,7 +377,8 @@ textarea {
 	background: transparent;
 	font-size: 1rem;
 }
-.form-btn, .order-btn {
+.form-btn,
+.order-btn {
 	padding: 0.8rem;
 	color: var(--rustic-red);
 	background: transparent;
@@ -397,7 +395,8 @@ textarea {
 	-o-transition: 0.4s;
 }
 .form-btn:hover,
-.form-btn:focus, .order-btn:hover,
+.form-btn:focus,
+.order-btn:hover,
 .order:focus {
 	background-color: var(--rustic-red);
 	color: var(--cream);
@@ -482,7 +481,8 @@ footer a {
 		font-size: clamp(1.1rem, 1.1rem + 0.3vw, 1.8rem);
 	}
 
-	p, a {
+	p,
+	a {
 		font-size: clamp(1rem, 1rem + 0.2vw, 1.2rem);
 	}
 
@@ -499,12 +499,15 @@ footer a {
 	article h2 {
 		padding: 2.5rem 0;
 	}
+	.home-article:nth-of-type(2) h2 {
+		padding-top: 0;
+	}
 
 	.articles-content {
 		display: flex;
 		margin-bottom: 2rem;
 	}
-	.text-content h3:nth-of-type(2){
+	.text-content h3:nth-of-type(2) {
 		padding-top: 1rem;
 	}
 
@@ -547,33 +550,32 @@ footer a {
 		width: 50%;
 		padding: 0 2rem;
 	}
-	
-  /* Order page */
-  .order-wrapper{
-    max-width: 80%;
-  }
-  .btn-cont{
-    display: flex;
-    justify-content: center;
-  }
-  .order-btn{
-    max-width: 70vw;
-  }
+
+	/* Order page */
+	.order-wrapper {
+		max-width: 80%;
+	}
+	.btn-cont {
+		display: flex;
+		justify-content: center;
+	}
+	.order-btn {
+		max-width: 70vw;
+	}
 	/* Jobs page */
 	.jobs-wrapper {
 		grid-template-columns: repeat(2, 1fr);
 	}
-  .job-section:last-child{
-    grid-column: span 2;
-  }
-  /* Coffe story page */
-  .text-content h3 {
-	padding: 0 0 1rem 0;
-}
-  .story-img{
-    object-fit: cover;
-  }
-  
+	.job-section:last-child {
+		grid-column: span 2;
+	}
+	/* Coffe story page */
+	.text-content h3 {
+		padding: 0 0 1rem 0;
+	}
+	.story-img {
+		object-fit: cover;
+	}
 
 	/* Footer for bigger screens */
 	.footer-nav {
@@ -616,18 +618,26 @@ footer a {
 		text-align: center;
 		padding: 1.5rem;
 	}
+	/* Home page */
+	.text-width-reduce {
+		max-width: 40ch;
+	}
+	.home-article .articles-content {
+		justify-content: center;
+		align-items: center;
+	}
 
-  /* order page */
-  .order-wrapper{
-    max-width: 60%;
-  }
-  .order-btn{
-    max-width: 40vw;
-  }
-  .articles-content {
-	display: flex;
-	margin-bottom: 4rem;
-}
+	/* order page */
+	.order-wrapper {
+		max-width: 60%;
+	}
+	.order-btn {
+		max-width: 40vw;
+	}
+	.articles-content {
+		display: flex;
+		margin-bottom: 4rem;
+	}
 
 	/* jobs page other background img  */
 	.header-jobs {
@@ -636,8 +646,8 @@ footer a {
 	.jobs-wrapper {
 		grid-template-columns: repeat(3, 1fr);
 	}
-  .job-section:last-child{
-    grid-column: 3;
-  }
+	.job-section:last-child {
+		grid-column: 3;
+	}
 }
 /* !!!!END MEDIA QUERIES!!!! */
