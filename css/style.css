@@ -66,7 +66,7 @@ h1 {
 }
 h2 {
 	font-size: 1.5rem;
-	padding-bottom: 0.8rem;
+	padding:  1rem 0;
 }
 h3 {
 	font-size: 1.1rem;
@@ -209,27 +209,18 @@ header {
 	background-color: rgba(0, 0, 0, 0.7);
 	z-index: -1;
 }
-
-.articles {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding-bottom: 1rem;
+article {
+	padding: 1rem;
 }
-.articles h2 {
-	text-align: center;
-}
-
-.articles img {
+article img {
+	padding-top: 1rem;
 	width: 100%;
 }
-.text-content {
-	padding: 0 0.5rem 0.5rem 0.5rem;
+article h2 {
+	text-align: center;
+	padding: 1.5rem 0;
 }
-.text-content h3 {
-	padding-bottom: 0.8rem;
-}
+
 
 /* !!!!END HOMEPAGE!!!! */
 
@@ -269,7 +260,7 @@ header {
 	background: url("../img/story/story-head.webp") no-repeat center center/cover;
 }
 .text-content h3 {
-	padding-top: 1rem;
+	padding: 1rem 0;
 }
 /* !!!!END COFFEE STORY!!!! */
 
@@ -504,18 +495,28 @@ footer a {
 		max-width: 1400px;
 	}
 
-	.articles {
-		flex-direction: row;
-		align-items: center;
+	article img {
+		padding-top: 0;
 	}
-	#art-one {
-		flex-direction: row;
+	article h2 {
+		padding: 2.5rem 0;
 	}
-	.articles:nth-child(even) {
-		flex-direction: row-reverse;
+
+	.articles-content {
+		display: flex;
 	}
-	.articles img {
-		max-width: 60%;
+
+	article:nth-child(odd) .articles-content img {
+		order: -1;
+	}
+	article img {
+		width: 40%;
+	}
+	article:nth-of-type(even) .text-content {
+		padding-right: 3rem;
+	}
+	article:nth-of-type(odd) .text-content {
+		padding-left: 3rem;
 	}
 
 	/* Menu page */
@@ -590,6 +591,7 @@ footer a {
 		background-color: transparent;
 		flex-direction: row;
 		justify-content: flex-end;
+		padding-right: 1rem;
 	}
 	.logo {
 		height: 120px;
