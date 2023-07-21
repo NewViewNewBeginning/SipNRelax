@@ -350,10 +350,8 @@ article h2 {
 		center/cover;
 }
 /* Contact Form  */
-.contact-form {
-	margin: 1rem auto;
-	width: 90%;
-	max-width: 700px;
+.contact-text{
+	margin-bottom: 2rem;
 }
 .input-group {
 	margin-bottom: 2rem;
@@ -530,7 +528,14 @@ footer a {
 	.open-wrapper {
 		display: flex;
 	}
-
+	/* Contact page */
+	.contact-section h2 {
+		padding-bottom: 2rem;
+	}
+	.contact-form {
+		width: 90%;
+		max-width: 700px;
+	}
 	.contact-section {
 		display: flex;
 	}
