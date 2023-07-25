@@ -257,12 +257,6 @@ article h2 {
 .header-order {
 	background: url("../img/order/order-head.webp") no-repeat center center/cover;
 }
-.order-wrapper {
-	padding: 2rem 1rem;
-}
-.order-wrapper div {
-	margin-bottom: 1.5rem;
-}
 
 ol h3{
 	padding: 1.5rem 0 .5rem 0;
@@ -295,7 +289,14 @@ ol h3{
 	left: 50%;
 	transform: translate(-50%, -50%);
 	background-color: var(--cream);
-	padding: 20px;
+	width: 100%;
+	padding: 3rem;
+}
+.modal-contact{
+	padding-top: 2rem;
+}
+.modal-contact a {
+	color: var(--coffee-brown);
 }
 
 .close-button {
@@ -558,6 +559,11 @@ footer a {
 	.order-btn {
 		max-width: 70vw;
 	}
+	.modal-content{
+		max-width: 80%;
+	}
+	
+
 	/* Jobs page */
 	.jobs-wrapper {
 		grid-template-columns: repeat(2, 1fr);
