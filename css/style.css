@@ -320,7 +320,14 @@ ol h3 {
 .job-section {
 	max-width: 450px;
 	justify-self: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
+.job-btn{
+	text-align: center;
+}
+
 
 .job-section,
 .menu-section,
@@ -576,6 +583,7 @@ footer a {
 	.job-section:last-child {
 		grid-column: span 2;
 	}
+	
 	/* Coffe story page */
 	.text-content h3 {
 		padding: 0 0 1rem 0;
