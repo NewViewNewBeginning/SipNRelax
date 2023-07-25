@@ -74,37 +74,40 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const orderButton = document.querySelector(".order-btn");
 
+// Functions to open and close the modal
+let openModal, closeModal;
+
 // Check if the button exists
 if (orderButton) {
-	const modal = document.querySelector(".modal");
-	const closeButton = document.querySelector(".close-button");
+    const modal = document.querySelector(".modal");
+    const closeButton = document.querySelector(".close-button");
 
-	// Function to open the modal
-	function openModal() {
-		if (modal) {
-			modal.style.display = "block";
-		}
-	}
+    // Function to open the modal
+    openModal = function() {
+        if (modal) {
+            modal.style.display = "block";
+        }
+    };
 
-	// Function to close the modal
-	function closeModal() {
-		if (modal) {
-			modal.style.display = "none";
-		}
-	}
+    // Function to close the modal
+    closeModal = function() {
+        if (modal) {
+            modal.style.display = "none";
+        }
+    };
 
-	// Add event listener to the button
-	orderButton.addEventListener("click", openModal);
+    // Add event listener to the button
+    orderButton.addEventListener("click", openModal);
 
-	// Add event listener to the close button
-	if (closeButton) {
-		closeButton.addEventListener("click", closeModal);
-	}
+    // Add event listener to the close button
+    if (closeButton) {
+        closeButton.addEventListener("click", closeModal);
+    }
 }
 if (window.location.pathname.includes('order.html')) {
-	// Open the modal immediately
-	openModal();
+    // Open the modal immediately
+    openModal();
 
-	// Set a timer to close the modal after 15 seconds
-	setTimeout(closeModal, 15000);
+    // Set a timer to close the modal after 15 seconds
+    setTimeout(closeModal, 15000);
 }
