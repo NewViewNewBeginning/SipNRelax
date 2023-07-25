@@ -263,6 +263,11 @@ article h2 {
 .order-wrapper div {
 	margin-bottom: 1.5rem;
 }
+
+ol h3{
+	padding: 1.5rem 0 .5rem 0;
+}
+
 .order-wrapper h2 {
 	text-align: center;
 }
