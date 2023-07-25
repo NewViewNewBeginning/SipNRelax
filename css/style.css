@@ -35,7 +35,7 @@ main {
 	color: var(--coffee-brown);
 }
 section {
-	padding: 1.5rem;
+	/* padding: 1.5rem; */
 	margin: 2rem 1rem;
 }
 
@@ -313,7 +313,7 @@ article h2 {
 	grid-template-columns: 1fr;
 }
 .job-section {
-	max-width: 480px;
+	max-width: 450px;
 	justify-self: center;
 }
 
@@ -323,6 +323,7 @@ article h2 {
 	box-shadow: 6px 5px 19px 1px rgba(107, 66, 38, 0.33);
 	-webkit-box-shadow: 6px 5px 19px 1px rgba(107, 66, 38, 0.33);
 	-moz-box-shadow: 6px 5px 19px 1px rgba(107, 66, 38, 0.33);
+	padding: 1.5rem;
 }
 
 .job-section h3 {
