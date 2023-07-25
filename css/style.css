@@ -70,7 +70,6 @@ h3 {
 	padding-bottom: 0.5rem;
 }
 
-
 /* HEADER */
 
 header {
@@ -258,8 +257,8 @@ article h2 {
 	background: url("../img/order/order-head.webp") no-repeat center center/cover;
 }
 
-ol h3{
-	padding: 1.5rem 0 .5rem 0;
+ol h3 {
+	padding: 1.5rem 0 0.5rem 0;
 }
 
 .order-wrapper h2 {
@@ -292,7 +291,7 @@ ol h3{
 	width: 100%;
 	padding: 3rem;
 }
-.modal-contact{
+.modal-contact {
 	padding-top: 2rem;
 }
 .modal-contact a {
@@ -408,6 +407,13 @@ textarea:valid ~ label {
 }
 
 /* !!!!END CONTACT!!!! */
+
+/* 404 Page Background */
+.header-404{
+	background: url("../img/404/404-bg.webp") no-repeat center
+		center/cover;
+}
+
 
 /* ------>>>  FOOTER styles for all pages  <<<------ */
 
@@ -559,10 +565,9 @@ footer a {
 	.order-btn {
 		max-width: 70vw;
 	}
-	.modal-content{
+	.modal-content {
 		max-width: 80%;
 	}
-	
 
 	/* Jobs page */
 	.jobs-wrapper {

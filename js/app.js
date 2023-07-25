@@ -105,6 +105,6 @@ if (window.location.pathname.includes('order.html')) {
 	// Open the modal immediately
 	openModal();
 
-	// Set a timer to close the modal after 5 seconds
-	setTimeout(closeModal, 7000);
+	// Set a timer to close the modal after 15 seconds
+	setTimeout(closeModal, 15000);
 }
